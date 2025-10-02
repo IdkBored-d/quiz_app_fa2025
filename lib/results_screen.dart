@@ -13,11 +13,11 @@ List<Map<String,Object>> getSummaryData(){
   for (var i =0; i< chosenAnswers.length; i++){
     summary.add({
       'question_index': i,
-      'qusetion': questions[i].text,
+      'question': questions[i].text,
       'correct_answer': questions[i].answers[0],
       'user_answer': chosenAnswers[i],
     });
-  };
+  }
   return summary;
 }
 
